@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: black;}
+            p{
+                margin:2%;
+                width:26%;
+                float:left;
+                padding: 50px 10px 50px;
+                color:white;
+                text-align:center;
+                box-shadow: 0 0 15px 10px blue;
+            }
+            #main{margin:auto;}
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, laboriosam!</p>        
+        </div>
+    </body>
+<script>
+    let data = [
+        'Lorem, ipsum dolor sit amet consectetur',
+        'adipisicing elit. Odio, laboriosam!',
+        'Lorem, ipsum dolor sit amet consectetur',
+        'adipisicing elit. Odio, laboriosam!',
+        'Lorem, ipsum dolor sit amet consectetur',
+        'adipisicing elit. Odio, laboriosam!',
+    ]
+    html = '';
+    for(let line of data)
+        html += `<p>${line}</p>`
+    let b = document.getElementById('main');
+    b.innerHTML = html;
+</script>
+</html>
