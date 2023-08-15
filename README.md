@@ -1,5 +1,5 @@
 # statweb
 
-`https://pranayrungta.github.io/statweb`
+[Home](https://pranayrungta.github.io/statweb)
 
-`https://pranayrungta.github.io/statweb/one`
+[static](https://pranayrungta.github.io/statweb/one)
