@@ -21,18 +21,15 @@
         </div>
     </body>
 <script>
-    let data = [
-        'Lorem, ipsum dolor sit amet consectetur',
-        'adipisicing elit. Odio, laboriosam!',
-        'Lorem, ipsum dolor sit amet consectetur',
-        'adipisicing elit. Odio, laboriosam!',
-        'Lorem, ipsum dolor sit amet consectetur',
-        'adipisicing elit. Odio, laboriosam!',
-    ]
-    html = '';
-    for(let line of data)
-        html += `<p>${line}</p>`
-    let b = document.getElementById('main');
-    b.innerHTML = html;
+    fetch("./data.json")
+    .then(response =>response.json())
+    .then(data => {
+        html = '';
+        for(let line of data)
+            html += `<p>${line}</p>`
+        let b = document.getElementById('main');
+        b.innerHTML = html;
+    });
+    // let data = require('./data.json');
 </script>
 </html>
